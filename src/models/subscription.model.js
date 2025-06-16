@@ -1,4 +1,5 @@
 import mongoose, { Schema } from "mongoose";
+import { User } from "./user.model";
 
 const subscriptionSchema = new mongoose.Schema({
     subscriber : {
@@ -9,6 +10,8 @@ const subscriptionSchema = new mongoose.Schema({
         type: Schema.Types.ObjectId,
         ref: "User"
     }
+
+    
 
 }, {timestamps: true})
 
